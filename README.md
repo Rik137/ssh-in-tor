@@ -31,4 +31,14 @@
 
 1. Установка Tor
 sudo apt install tor -y
-
+2. Настройка hidden service
+sudo nano /etc/tor/torrc
+Добавить:
+HiddenServiceDir /var/lib/tor/ssh_hidden/
+HiddenServicePort 22 127.0.0.1:22
+3. Перезапуск
+sudo systemctl restart tor
+4. Получение onion-адреса
+sudo cat /var/lib/tor/ssh_hidden/hostname
+👉 получаешь:
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
