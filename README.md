@@ -42,3 +42,9 @@ sudo systemctl restart tor
 sudo cat /var/lib/tor/ssh_hidden/hostname
 👉 получаешь:
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
+⚠️ Важный момент
+	•	это НЕ DNS
+	•	это НЕ IP
+	•	это криптографический адрес
+
+👉 его нельзя “угадать” или отсканировать
