@@ -54,4 +54,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
 
 1. Tor с мостами (обход блокировок)
 sudo nano /etc/tor/torrc
+Пример:
+UseBridges 1
+ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+
+Bridge obfs4 77.85.159.177:7000 ...
+Bridge obfs4 207.58.153.218:48954 ...
+
+SocksPort 127.0.0.1:9050
 
