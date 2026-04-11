@@ -48,3 +48,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
 	•	это криптографический адрес
 
 👉 его нельзя “угадать” или отсканировать
+
+🌉 Часть 2 — клиент (твоя машина)
+
+1. Tor с мостами (обход блокировок)
+
