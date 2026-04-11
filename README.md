@@ -44,6 +44,7 @@ sudo cat /var/lib/tor/ssh_hidden/hostname
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
 ⚠️ Важный момент
 	•	это НЕ DNS
+
 	•	это НЕ IP
 	•	это криптографический адрес
 
@@ -52,4 +53,5 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
 🌉 Часть 2 — клиент (твоя машина)
 
 1. Tor с мостами (обход блокировок)
+sudo nano /etc/tor/torrc
 
