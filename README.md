@@ -70,6 +70,12 @@ ss -tulnp | grep 9050
 sudo systemctl restart tor@default
 Ждёшь:
 Bootstrapped 100%
+🔌 Часть 3 — подключение через SOCKS
+Установка ncat
+sudo apt install ncat -y
+Команда подключения
+ssh -o ProxyCommand="ncat --proxy 127.0.0.1:9050 --proxy-type socks5 %h %p" user@your.onion
+
 
 
 
