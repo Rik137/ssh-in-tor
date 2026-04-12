@@ -61,5 +61,12 @@ ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 Bridge obfs4 77.85.159.177:7000 ...
 Bridge obfs4 207.58.153.218:48954 ...
 
-SocksPort 127.0.0.1:9050
+SocksPort 127.0.0.1:9050  
+2. Проверка
+ss -tulnp | grep 9050
+👉 должно быть:
+127.0.0.1:9050
+
+
+
 
