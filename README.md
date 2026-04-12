@@ -53,7 +53,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
 🌉 Часть 2 — клиент (твоя машина)
 
 1. Tor с мостами (обход блокировок)
-sudo nano /etc/tor/torrc
+sudo nano /etc/tor/torrcl
 Пример:
 UseBridges 1
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
@@ -66,6 +66,12 @@ SocksPort 127.0.0.1:9050
 ss -tulnp | grep 9050
 👉 должно быть:
 127.0.0.1:9050
+3. Запуск
+sudo systemctl restart tor@default
+Ждёшь:
+Bootstrapped 100%
+
+
 
 
 
