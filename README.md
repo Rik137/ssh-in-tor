@@ -75,6 +75,17 @@ Bootstrapped 100%
 sudo apt install ncat -y
 Команда подключения
 ssh -o ProxyCommand="ncat --proxy 127.0.0.1:9050 --proxy-type socks5 %h %p" user@your.onion
+🧬 Часть 4 — нормализация (чтобы не страдать)
+~/.ssh/config
+nano ~/.ssh/config
+Host myserver
+    HostName your.onion
+    User rick
+    ProxyCommand ncat --proxy 127.0.0.1:9050 --proxy-type socks5 %h %p
+    IdentityFile ~/.ssh/id_ed25519
+    ObscureKeystrokeTiming no
+Использование
+ssh myserver
 
 
 
