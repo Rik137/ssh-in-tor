@@ -25,8 +25,8 @@
 👉 выглядит как обычный Tor-трафик
 
 ⸻
-
-⚙️ Часть 1 — сервер (самое важное)
+## реализация
+### ⚙️ Часть 1 — сервер (самое важное)
 
 1. Установка Tor
 sudo apt install tor -y
@@ -49,7 +49,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
 
 👉 его нельзя “угадать” или отсканировать
 
-🌉 Часть 2 — клиент (твоя машина)
+### Часть 2 — клиент (твоя машина)
 
 1. Tor с мостами (обход блокировок)
 sudo nano /etc/tor/torrcl
@@ -68,13 +68,13 @@ ss -tulnp | grep 9050
 3. Запуск
 sudo systemctl restart tor@default
 Ждёшь:
-Bootstrapped 100%
-🔌 Часть 3 — подключение через SOCKS
+Bootstrapped 100% 
+### Часть 3 — подключение через SOCKS
 Установка ncat
 sudo apt install ncat -y
 Команда подключения
 ssh -o ProxyCommand="ncat --proxy 127.0.0.1:9050 --proxy-type socks5 %h %p" user@your.onion
-🧬 Часть 4 — нормализация (чтобы не страдать)
+### Часть 4 — нормализация (чтобы не страдать)
 ~/.ssh/config
 nano ~/.ssh/config
 Host myserver
@@ -83,7 +83,7 @@ Host myserver
     ProxyCommand ncat --proxy 127.0.0.1:9050 --proxy-type socks5 %h %p
     IdentityFile ~/.ssh/id_ed25519
     ObscureKeystrokeTiming no
-Использование
+### Использование
 ssh myserver
 
 
