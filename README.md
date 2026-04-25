@@ -45,7 +45,9 @@ sudo systemctl restart tor
 6. Получение onion-адреса
 sudo cat /var/lib/tor/ssh_hidden/hostname
 👉 получаешь:
+```
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
+```
 ⚠️ Важный момент
 	•	это НЕ DNS
 
