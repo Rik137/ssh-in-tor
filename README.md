@@ -39,8 +39,10 @@ sudo nano /etc/tor/torrc
 HiddenServiceDir /var/lib/tor/ssh_hidden/
 HiddenServicePort 22 127.0.0.1:22
 4. Перезапуск
+```
 sudo systemctl restart tor
-5. Получение onion-адреса
+```
+6. Получение onion-адреса
 sudo cat /var/lib/tor/ssh_hidden/hostname
 👉 получаешь:
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
