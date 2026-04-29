@@ -50,7 +50,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
 ```
 ⚠️ Важный момент
 	•	это НЕ DNS
-
 	•	это НЕ IP
 	•	это криптографический адрес
 
@@ -59,11 +58,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.onion
 ### Часть 2 — клиент (твоя машина)
 
 1. Tor с мостами (обход блокировок)
+```bash
 sudo nano /etc/tor/torrcl
+```
 Пример:
+```bash
 UseBridges 1
 ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
-
+```
 Bridge obfs4 77.85.159.177:7000 ...
 Bridge obfs4 207.58.153.218:48954 ...
 
