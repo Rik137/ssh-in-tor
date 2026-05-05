@@ -75,7 +75,9 @@ SocksPort 127.0.0.1:9050
 2. Проверка
 ss -tulnp | grep 9050
 👉 должно быть:
+```bash
 127.0.0.1:9050
+```
 3. Запуск
 sudo systemctl restart tor@default
 Ждёшь:
