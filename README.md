@@ -34,7 +34,9 @@
 sudo apt install tor -y
 ```
 3. Настройка hidden service
+```bash
 sudo nano /etc/tor/torrc
+```
 Добавить:
 HiddenServiceDir /var/lib/tor/ssh_hidden/
 HiddenServicePort 22 127.0.0.1:22
